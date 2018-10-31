@@ -28,7 +28,7 @@ class PrintToPdf {
         int count = 0;
 
 
-        System.out.println("Generating excel file..............");
+        System.out.println("Generating pdf file..............");
         Paragraph paragraph = new Paragraph();
         for (String text : DataOutsideTable ) {
 
