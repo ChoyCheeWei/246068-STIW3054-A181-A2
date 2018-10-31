@@ -8,7 +8,7 @@ import java.util.Iterator;
 class ReadExcel {
 
     // set path
-    private static final String SAMPLE_XLSX_FILE_PATH = "C:\\Users\\ccw\\Desktop\\chessResultsList.xlsx";
+    private static final String path = "C:\\Users\\ccw\\Desktop\\chessResultsList.xlsx";
 
     private final ArrayList<Data> tablecontents = new ArrayList<Data>();
     private final ArrayList<String> DataOutsideTable = new ArrayList<String>();
@@ -17,7 +17,7 @@ class ReadExcel {
     public void Read() throws IOException {
 
         // Creating a Workbook from an Excel file
-        Workbook workbook = WorkbookFactory.create(new File(SAMPLE_XLSX_FILE_PATH));
+        Workbook workbook = WorkbookFactory.create(new File(path));
 
         // Getting the Sheet at index zero
         Sheet sheet = workbook.getSheetAt(0);
